@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tawqeer Al-Quran – Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: #00695C; /* A teal-ish header */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #00695C;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 10px;
+      color: #333;
+      margin-top: 40px;
+    }
+    a {
+      color: #00695C;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 90%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tawqeer Al-Quran – Support</h1>
+</header>
+
+<main>
+
+  <!-- Overview Section -->
+  <section>
+    <h2>Welcome to Tawqeer Al-Quran</h2>
+    <p>
+      Tawqeer Al-Quran is a multifaceted app designed to enrich your spiritual routine.
+      This page provides troubleshooting tips and contact information for any issues you
+      may experience. Please see below for setup guidance and frequently asked questions.
+    </p>
+  </section>
+
+  <!-- Key Features Section -->
+  <section>
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>Qiblah Compass:</strong> Accurately determines the direction of the Kaaba to help you pray in the correct direction.</li>
+      <li><strong>Prayer Times &amp; Azan Notifications:</strong> Stay on schedule with up-to-date prayer times and optional Azan alerts.</li>
+      <li><strong>Location-Based Services:</strong> Customize your location using permissions to get precise Qiblah directions and prayer schedules.</li>
+      <li><strong>Audio Recitations:</strong> Listen to soulful Quran recitations integrated with <code>audioplayers</code> and <code>just_audio_background</code>.</li>
+      <li><strong>Language Support:</strong> Toggle seamlessly between Arabic, English, and Bangla, adjusting font size as you prefer.</li>
+      <li><strong>Full Quran Access (Optional Reading Plans):</strong> For those who wish, the app offers easy navigation by Surah, Juz, or page.</li>
+    </ul>
+  </section>
+
+  <!-- Troubleshooting Section -->
+  <section>
+    <h2>Troubleshooting</h2>
+
+    <h3>1. Qiblah Compass or Prayer Times Not Updating</h3>
+    <p>
+      Make sure your device’s location services are enabled and permissions are granted.  
+      On Android, go to <em>Settings &gt; Apps &gt; Tawqeer Al-Quran &gt; Permissions</em>  
+      to enable <strong>Location</strong>.  
+      On iOS, check <em>Settings &gt; Privacy &amp; Security &gt; Location Services</em>.
+    </p>
+
+    <h3>2. Azan Notifications Not Appearing</h3>
+    <p>
+      <strong>Grant Notification Permissions:</strong>  
+      - Android 13+: Use <code>Permission.notification.request()</code> in the app or  
+        <em>Settings &gt; Notifications &gt; Tawqeer Al-Quran</em>.  
+      - iOS: Check <em>Settings &gt; Notifications</em> and ensure alerts are allowed.
+      <br/><br/>
+      <strong>Disable Battery Optimization:</strong> (Especially on Android)  
+      - Some devices halt background processes to save battery.  
+      - Go to <em>Settings &gt; Battery &gt; Tawqeer Al-Quran &gt; Unrestricted</em> 
+        to keep Azan notifications running.
+    </p>
+
+    <h3>3. Audio Recitations Not Working</h3>
+    <p>
+      Check that your internet connection is stable, as streaming may require decent bandwidth.  
+      Also ensure media volume is not muted and the app’s <em>“Play Azan Audio”</em> option is turned on.
+    </p>
+
+    <h3>4. Language or Font Issues</h3>
+    <p>
+      If text is unreadable or misaligned, go to <strong>Settings &gt; Language</strong> or  
+      <strong>Settings &gt; Font Size</strong> within the app’s main menu. This is managed through  
+      <code>_getGlobalFontFamily()</code> in <code>main.dart</code>, ensuring your chosen language and size load properly.
+    </p>
+
+  </section>
+
+  <!-- Contact Support Section -->
+  <section>
+    <h2>Contact &amp; Support</h2>
+    <p>
+      For direct assistance or any further questions, email our support team at:
+      <br/>
+      <strong>Email:</strong> <a href="mailto:YourEmail@example.com">YourEmail@example.com</a>
+    </p>
+    <p>
+      We aim to reply within 48 hours. Kindly include your device type, OS version,
+      and a short description of the issue.
+    </p>
+  </section>
+
+  <!-- Disclaimer Section -->
+  <section>
+    <h2>Disclaimer</h2>
+    <p>
+      Tawqeer Al-Quran integrates data (including Quranic texts, translations, and audio) from reputable
+      sources to ensure accuracy. However, variations may occur due to interpretive differences or updates
+      in those source materials. The app is not intended as a comprehensive scholarly reference. For any
+      detailed religious or theological queries, consult a qualified scholar. Use of this app is at your
+      own discretion; the developers assume no liability for errors or omissions.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Tawqeer Al-Quran | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
